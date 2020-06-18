@@ -17,7 +17,7 @@ control 'core-plans-docker-exists' do
   end
 
   command_relative_path = input('command_relative_path', value: 'bin/docker')
-  command_full_path = File.join(plan_installation_directory.stdout.strip, "#{command_relative_path}")
+  command_full_path = File.join(plan_installation_directory.stdout.strip, command_relative_path)
   describe file(command_full_path) do
     it { should exist }
   end
