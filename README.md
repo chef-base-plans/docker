@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_apis/build/status/chef-base-plans.docker?branchName=master)](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_build/latest?definitionId=69&branchName=master)
+[![Build Status](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_apis/build/status/chef-base-plans.docker?branchName=master)](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_build/latest?definitionId=125&branchName=master)
 
 # docker
 
@@ -48,6 +48,33 @@ will add the following binaries to the PATH:
 * /bin/docker
 * /bin/containerd
 * /bin/runc
+
+For example:
+
+```bash
+$ hab pkg install core/docker --binlink
+» Installing core/docker
+☁ Determining latest version of core/docker in the 'stable' channel
+→ Found newer installed version (core/docker/19.03.8/20200612100826) than remote version (core/docker/19.03.8/20200505084334)
+→ Using core/docker/19.03.8/20200612100826
+★ Install of core/docker/19.03.8/20200612100826 complete with 0 new packages installed.
+» Binlinking containerd-shim from core/docker/19.03.8/20200612100826 into /bin
+★ Binlinked containerd-shim from core/docker/19.03.8/20200612100826 to /bin/containerd-shim
+» Binlinking docker-init from core/docker/19.03.8/20200612100826 into /bin
+★ Binlinked docker-init from core/docker/19.03.8/20200612100826 to /bin/docker-init
+» Binlinking dockerd from core/docker/19.03.8/20200612100826 into /bin
+★ Binlinked dockerd from core/docker/19.03.8/20200612100826 to /bin/dockerd
+» Binlinking docker-proxy from core/docker/19.03.8/20200612100826 into /bin
+★ Binlinked docker-proxy from core/docker/19.03.8/20200612100826 to /bin/docker-proxy
+» Binlinking ctr from core/docker/19.03.8/20200612100826 into /bin
+★ Binlinked ctr from core/docker/19.03.8/20200612100826 to /bin/ctr
+» Binlinking docker from core/docker/19.03.8/20200612100826 into /bin
+★ Binlinked docker from core/docker/19.03.8/20200612100826 to /bin/docker
+» Binlinking containerd from core/docker/19.03.8/20200612100826 into /bin
+★ Binlinked containerd from core/docker/19.03.8/20200612100826 to /bin/containerd
+» Binlinking runc from core/docker/19.03.8/20200612100826 into /bin
+★ Binlinked runc from core/docker/19.03.8/20200612100826 to /bin/runc
+```
 
 #### Using an example binary
 
