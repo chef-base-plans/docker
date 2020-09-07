@@ -16,9 +16,20 @@ control 'core-plans-docker-exists' do
     its('stderr') { should be_empty }
   end
 
-  command_relative_path = input('command_relative_path', value: 'bin/docker')
-  command_full_path = File.join(plan_installation_directory.stdout.strip, command_relative_path)
-  describe file(command_full_path) do
-    it { should exist }
+  [
+    "containerd",
+    "containerd-shim",
+    "ctr",
+    "docker",
+    "docker-init",
+    "docker-proxy",
+    "dockerd",
+    "runc",
+  ].each do |binary_name|
+    command_full_path = File.join(plan_installation_directory.stdout.strip, "bin", binary_name)
+    describe file(command_full_path) do
+      it { should exist }
+      it { should be_executable }
+    end
   end
 end
