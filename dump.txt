@@ -1,0 +1,21 @@
+» Installing core/docker
+☁ Determining latest version of core/docker in the 'stable' channel
+☛ Verifying core/docker/19.03.8/20200505084334
+✓ Installed core/docker/19.03.8/20200505084334
+★ Install of core/docker/19.03.8/20200505084334 complete with 1 new packages installed.
+» Binlinking containerd-shim from core/docker/19.03.8/20200505084334 into /bin
+★ Binlinked containerd-shim from core/docker/19.03.8/20200505084334 to /bin/containerd-shim
+» Binlinking docker-init from core/docker/19.03.8/20200505084334 into /bin
+★ Binlinked docker-init from core/docker/19.03.8/20200505084334 to /bin/docker-init
+» Binlinking dockerd from core/docker/19.03.8/20200505084334 into /bin
+★ Binlinked dockerd from core/docker/19.03.8/20200505084334 to /bin/dockerd
+» Binlinking docker-proxy from core/docker/19.03.8/20200505084334 into /bin
+★ Binlinked docker-proxy from core/docker/19.03.8/20200505084334 to /bin/docker-proxy
+» Binlinking ctr from core/docker/19.03.8/20200505084334 into /bin
+★ Binlinked ctr from core/docker/19.03.8/20200505084334 to /bin/ctr
+» Binlinking docker from core/docker/19.03.8/20200505084334 into /bin
+★ Binlinked docker from core/docker/19.03.8/20200505084334 to /bin/docker
+» Binlinking containerd from core/docker/19.03.8/20200505084334 into /bin
+★ Binlinked containerd from core/docker/19.03.8/20200505084334 to /bin/containerd
+» Binlinking runc from core/docker/19.03.8/20200505084334 into /bin
+★ Binlinked runc from core/docker/19.03.8/20200505084334 to /bin/runc
